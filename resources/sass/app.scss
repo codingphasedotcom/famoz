@@ -1,0 +1,64 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import 'home';
+*{
+    box-sizing: border-box !important;
+}
+body{
+    background: #EDF0F9;
+}
+#main-layout{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: 100vh;
+    width: 100%;
+    // overflow: hidden;
+    .side-menu{
+        background: #ffffff;
+        color: #465B6E;
+        padding: 50px;
+        .logo{
+            color: #2768F7;
+            font-weight: 900;
+            font-size:3rem;
+            margin-bottom: 1.2rem;
+        }
+        .links{
+            display: flex;
+            flex-direction: column;
+            a{  
+                padding: 0;
+                margin-bottom: 1.2rem;
+                color: #2768F7;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                &:hover{
+                    color: #EC578F;
+                }
+                ion-icon{
+                    color: #2768F7 !important;
+                    font-size: 1rem;
+                    margin-right: 1rem;
+                    color: blue;
+                }
+            }
+        }
+    }
+    .content-area{
+        background: #EFF2F9;
+        height: 100vh;
+        width: calc(100vw - 300px);
+        overflow: scroll;
+        padding: 50px;
+        a{
+            color: #2768F7 !important;
+        }
+    }
+}
