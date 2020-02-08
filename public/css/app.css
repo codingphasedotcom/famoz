@@ -10972,8 +10972,6 @@ body {
 
 #main-layout {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  grid-template-rows: 100vh;
   width: 100%;
 }
 
@@ -10981,6 +10979,10 @@ body {
   background: #ffffff;
   color: #465B6E;
   padding: 50px;
+  width: 300px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
 }
 
 #main-layout .side-menu .logo {
@@ -11019,6 +11021,7 @@ body {
   background: #EFF2F9;
   height: 100vh;
   width: calc(100vw - 300px);
+  transform: translate3d(300px, 0, 0);
   overflow: scroll;
   padding: 50px;
 }
