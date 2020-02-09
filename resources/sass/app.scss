@@ -6,12 +6,30 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@import 'media';
 @import 'home';
 *{
     box-sizing: border-box !important;
 }
 body{
     background: #EDF0F9;
+}
+#user-bubble{
+    height: 50px;
+    width: 50px;
+    border: 3px solid white;
+    position: fixed;
+    top: 10px;
+    right: 50px;
+    z-index: 100;
+    background: url('https://randomuser.me/api/portraits/women/44.jpg');
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+    -moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+    box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
 }
 #main-layout{
     display: grid;
@@ -27,7 +45,7 @@ body{
         position: absolute;
         top:0;
         bottom: 0;
-        
+
         .logo{
             color: #2768F7;
             font-weight: 900;
@@ -37,6 +55,7 @@ body{
         .links{
             display: flex;
             flex-direction: column;
+            
             a{  
                 padding: 0;
                 margin-bottom: 1.2rem;
@@ -44,10 +63,14 @@ body{
                 display: flex;
                 justify-content: flex-start;
                 align-items: flex-start;
+                text-decoration: none;
                 &:hover{
                     color: #EC578F;
+                    .fas, .far{
+                        color: #EC578F !important;
+                    }
                 }
-                ion-icon{
+                .fas, .far{
                     color: #2768F7 !important;
                     font-size: 1rem;
                     margin-right: 1rem;
@@ -65,6 +88,26 @@ body{
         padding: 50px;
         a{
             color: #2768F7 !important;
+        }
+    }
+}
+.ad-space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media (max-width: 960.98px) {
+    #main-layout{
+        .side-menu{
+            transform: translate3d(-300px, 0, 0);
+        }
+        .content-area{
+            transform: translate3d(0,0,0);
+            width: 100%;
+            padding: 20px;
         }
     }
 }

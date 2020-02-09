@@ -10884,7 +10884,171 @@ a.text-dark:focus {
   }
 }
 
+#media-content #top-section {
+  margin-bottom: 2rem;
+}
+
+#media-content #top-section iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+#media-content #cast-section {
+  margin-bottom: 2rem;
+}
+
+#media-content #cast-section h3 {
+  margin-bottom: 2rem;
+}
+
+#media-content #cast-section h6 {
+  font-weight: 700;
+}
+
+#media-content #cast-section .vote-btn {
+  border: 1px solid #EC578F;
+  color: #EC578F;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  height: 50px;
+  width: 100px;
+}
+
+#media-content #cast-section .vote-btn:hover,
+#media-content #cast-section .vote-btn.active {
+  background: #EC578F;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+#media-content #cast-section .cast-members {
+  display: flex;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+#media-content #cast-section .cast-members .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+  margin-right: 10px;
+  scroll-snap-align: center;
+}
+
+#media-content #cast-section .cast-members .member:hover .user-image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#media-content #cast-section .cast-members .member .user-image {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  border: 3px solid white;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#media-content #cast-section .cast-members .member .title {
+  font-size: 0.9rem;
+}
+
+#media-content .home-jumbo {
+  height: calc(100vh - 200px);
+  width: 100%;
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+  margin-bottom: 2rem;
+}
+
+#media-content h2 {
+  margin-bottom: 2rem;
+}
+
+#media-content .comments .comment {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+}
+
+#media-content .comments .comment .number {
+  font-weight: 100;
+  margin-right: 20px;
+}
+
+#media-content .comments .comment .user-image {
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+#media-content .comments .comment .info .name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#media-content .comments .comment .info .message {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#media-content .editors-list .container .row .col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#media-content .editors-list .container .row .col-md-6 .box-user {
+  height: 150px;
+  width: 100%;
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#media-content .editors-list .container .row .col-md-6 .box-user:hover {
+  opacity: 1;
+}
+
 #home-content .home-jumbo {
+  display: block;
   height: calc(100vh - 200px);
   width: 100%;
   background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
@@ -10937,14 +11101,12 @@ a.text-dark:focus {
   font-size: 1rem;
 }
 
-#home-content .editors-list .container .row .col-md-6 {
+#home-content .editors-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
-#home-content .editors-list .container .row .col-md-6 .box-user {
+#home-content .editors-list .box-user {
   height: 150px;
   width: 100%;
   background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
@@ -10958,7 +11120,7 @@ a.text-dark:focus {
   transition: opacity 0.3s ease-in-out;
 }
 
-#home-content .editors-list .container .row .col-md-6 .box-user:hover {
+#home-content .editors-list .box-user:hover {
   opacity: 1;
 }
 
@@ -10968,6 +11130,22 @@ a.text-dark:focus {
 
 body {
   background: #EDF0F9;
+}
+
+#user-bubble {
+  height: 50px;
+  width: 50px;
+  border: 3px solid white;
+  position: fixed;
+  top: 10px;
+  right: 50px;
+  z-index: 100;
+  background: url("https://randomuser.me/api/portraits/women/44.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
 }
 
 #main-layout {
@@ -11004,13 +11182,20 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  text-decoration: none;
 }
 
 #main-layout .side-menu .links a:hover {
   color: #EC578F;
 }
 
-#main-layout .side-menu .links a ion-icon {
+#main-layout .side-menu .links a:hover .fas,
+#main-layout .side-menu .links a:hover .far {
+  color: #EC578F !important;
+}
+
+#main-layout .side-menu .links a .fas,
+#main-layout .side-menu .links a .far {
   color: #2768F7 !important;
   font-size: 1rem;
   margin-right: 1rem;
@@ -11028,5 +11213,23 @@ body {
 
 #main-layout .content-area a {
   color: #2768F7 !important;
+}
+
+.ad-space {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 960.98px) {
+  #main-layout .side-menu {
+    transform: translate3d(-300px, 0, 0);
+  }
+
+  #main-layout .content-area {
+    transform: translate3d(0, 0, 0);
+    width: 100%;
+    padding: 20px;
+  }
 }
 

@@ -64,18 +64,22 @@
         </style>
         <link href="/css/app.css" rel="stylesheet">
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/5d7449fda0.js" crossorigin="anonymous"></script>
     </head>
     <body>
+    <div id="user-bubble">
+        
+    </div>
         <div id="main-layout">
             <div class="side-menu">
                 <div class="logo">
                 Famoz
                 </div>
                 <div class="links">
-                    <a href="#"> <ion-icon name="globe"></ion-icon> Explore</a>
-                    <a href="#"><ion-icon name="stats-chart-sharp"></ion-icon> Trending</a>
-                    <a href="#"> <ion-icon name="radio"></ion-icon>Genres</a>
-                    <a href="#">Dembow</a>
+                    <a href="#"> <i class="fas fa-globe-americas"></i> Explore</a>
+                    <a href="#"><i class="fas fa-chart-line"></i>Trending</a>
+                    <a href="#"><i class="fas fa-broadcast-tower"></i>Genres</a>
+                    
                 </div>
             </div>
             <div class="content-area">

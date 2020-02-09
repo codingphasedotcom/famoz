@@ -4,12 +4,11 @@
 
 @section('content')
     <div id="home-content">
-
-        <div class="home-jumbo">
+        <a href="/video/baje-con-trenza" class="home-jumbo">
             <div class="title">
 
             </div>
-        </div>
+        </a>
         <div class="row">
             <div class="col-md-6">
                 <h2>Trending Today</h2>
@@ -88,49 +87,19 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-3 editors-list">
                 <h2>Editors Choice</h2>
-                <div class="editors-list">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="box-user">
-                                </div>
-                                <div class="box-user">
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <div class="box-user">
-                                </div>
-                                <div class="box-user">
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="box-user">
                 </div>
-                <h2>Editors Choice</h2>
-                <div class="editors-list">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="box-user">
-                                </div>
-                                <div class="box-user">
-                                </div>
-                                
-                            </div>
-                            <div class="col-md-6">
-                                <div class="box-user">
-                                </div>
-                                <div class="box-user">
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
+                <div class="box-user">
                 </div>
+                <div class="box-user">
+                </div>
+                <div class="box-user">
+                </div>
+            </div>
+            <div class="col-md-3 ad-space">
+                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6bc5b433427407.56aa8c7f96f3c.jpg">
             </div>
         </div>
     </div>

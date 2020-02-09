@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/:username', function () {
+    return view('home');
+});
+
+Route::get('/:username/videos', function () {
+    return view('home');
+});
+
+Route::get('/video/{test}', function () {
+    return view('media/video');
+});
