@@ -12,17 +12,18 @@
 */
 
 Route::get('/', function () {
-    return view('home');
-});
-
-Route::get('/:username', function () {
-    return view('home');
-});
-
-Route::get('/:username/videos', function () {
-    return view('home');
+    return view('feed');
 });
 
 Route::get('/video/{test}', function () {
     return view('media/video');
 });
+
+Route::get('/{username}', function () {
+    return view('users/profile');
+});
+
+Route::get('/{username}/videos', function () {
+    return view('home');
+});
+

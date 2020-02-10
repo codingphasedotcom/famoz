@@ -3,7 +3,7 @@
 @section('title', 'Page Title')
 
 @section('content')
-    <div id="home-content">
+    <div id="trending-content">
         <a href="/video/baje-con-trenza" class="home-jumbo">
             <div class="title">
 

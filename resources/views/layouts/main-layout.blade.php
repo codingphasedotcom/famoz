@@ -63,7 +63,6 @@
             }
         </style>
         <link href="/css/app.css" rel="stylesheet">
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
         <script src="https://kit.fontawesome.com/5d7449fda0.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -72,13 +71,26 @@
     </div>
         <div id="main-layout">
             <div class="side-menu">
-                <div class="logo">
+                <a href="/" class="logo">
                 Famoz
-                </div>
+                </a>
                 <div class="links">
-                    <a href="#"> <i class="fas fa-globe-americas"></i> Explore</a>
-                    <a href="#"><i class="fas fa-chart-line"></i>Trending</a>
-                    <a href="#"><i class="fas fa-broadcast-tower"></i>Genres</a>
+                    <a href="/">
+                        <i class="fas fa-home"></i>
+                        <span>Feed</span>
+                    </a>
+                    <a href="#"> 
+                        <i class="fas fa-globe-americas"></i> 
+                        <span>Explore</span>
+                    </a>
+                    <a href="/trending">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Trending</span>
+                        </a>
+                    <a href="#">
+                        <i class="fas fa-cog"></i>
+                        <span>settings</span>
+                        </a>
                     
                 </div>
             </div>

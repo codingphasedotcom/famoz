@@ -6,8 +6,9 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
-@import 'media';
-@import 'home';
+@import 'media/media';
+@import 'users/profile';
+@import 'feed';
 *{
     box-sizing: border-box !important;
 }
@@ -32,7 +33,7 @@ body{
     box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
 }
 #main-layout{
-    display: grid;
+    // display: grid;
     // grid-template-columns: 300px 1fr;
     // grid-template-rows: 100vh;
     width: 100%;
@@ -102,7 +103,39 @@ body{
 @media (max-width: 960.98px) {
     #main-layout{
         .side-menu{
-            transform: translate3d(-300px, 0, 0);
+            // transform: translate3d(300px, 0, 0);
+            // display: ;
+            z-index: 10;
+            top: auto;
+            padding: 0;
+            width: 100%;
+            .links{
+                flex-direction: row;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 20px;
+                a{
+                    height: 50px;
+                    width: 50px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0;
+                    margin: 0;
+                    .fas, .far{
+                        font-size: 1.7rem;
+                        margin: 0;
+                    }
+                }
+                span{
+                    display: none;
+                }
+            }
+            .logo{
+                display: none;
+            }
         }
         .content-area{
             transform: translate3d(0,0,0);
