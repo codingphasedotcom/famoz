@@ -15,6 +15,13 @@ Route::get('/', function () {
     return view('feed');
 });
 
+Route::get('/discover', function () {
+    return view('discover');
+});
+Route::get('/trending', function () {
+    return view('trending');
+});
+
 Route::get('/video/{test}', function () {
     return view('media/video');
 });
@@ -26,4 +33,5 @@ Route::get('/{username}', function () {
 Route::get('/{username}/videos', function () {
     return view('home');
 });
+
 

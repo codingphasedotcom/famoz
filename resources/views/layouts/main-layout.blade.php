@@ -79,9 +79,9 @@
                         <i class="fas fa-home"></i>
                         <span>Feed</span>
                     </a>
-                    <a href="#"> 
+                    <a href="/discover"> 
                         <i class="fas fa-globe-americas"></i> 
-                        <span>Explore</span>
+                        <span>Discover</span>
                     </a>
                     <a href="/trending">
                         <i class="fas fa-chart-line"></i>

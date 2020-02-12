@@ -8,7 +8,9 @@
             <div class="col-md-6">
                 <div class="feed-list">
                     <div class="post video">
-                        <div class="video-image"></div>
+                        <a href="/video/baje-con-trenza">
+                            <div class="video-image"></div>
+                        </a>
                         <div class="info">
                             <div class="user-image">
                                 <img src="https://randomuser.me/api/portraits/women/44.jpg">

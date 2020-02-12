@@ -9,6 +9,8 @@
 @import 'media/media';
 @import 'users/profile';
 @import 'feed';
+@import 'discover';
+@import 'trending';
 *{
     box-sizing: border-box !important;
 }
@@ -117,8 +119,8 @@ body{
                 align-items: center;
                 padding: 0 20px;
                 a{
-                    height: 50px;
-                    width: 50px;
+                    height: 70px;
+                    width: 70px;
                     display: flex;
                     justify-content: center;
                     align-items: center;
