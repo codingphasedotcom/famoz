@@ -4,8 +4,27 @@
 
 @section('content')
     <div id="discover-content">
+            <div class="filter">
+                <div class="filter-selection">
+                    <label>Genre</label>
+                    <select>
+                        <option>Reggaeton</option>
+                        <option>Dembow</option>
+                        <option>Trap</option>
+                    </select>
+                </div>
+                <div class="filter-selection">
+                    <label>Date</label>
+                    <select>
+                        <option>Today</option>
+                        <option>This Week</option>
+                        <option>This Month</option>
+                    </select>
+                </div>
+
+            </div>
             <div class="feed-list row">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-sm-12 first-video">
                     <div class="post video">
                         <a href="/video/baje-con-trenza">
                             <img src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg" class="video-image">

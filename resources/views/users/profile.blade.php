@@ -4,22 +4,44 @@
 
 @section('content')
     
-    <div id="media-content">
+    <div id="profile-content">
         <section id="top-section">
-            <div class="row">
-                <div class="col-md-9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe4b0jSHYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="user-image">
+                <img src="https://i1.sndcdn.com/avatars-000720436693-hfwlc7-t500x500.jpg">
+            </div>
+            <div class="profile-information">
+                <div class="user-title">
+                    <h3>@ozuna</h3>
+                    <h5>Juan Carlos Ozuna Rosado</h5>
                 </div>
-                <div class="col-md-3 ad-space d-none d-md-block d-lg-block d-xl-block">
-                    <img src="/img/160x600ad.jpeg">
+                <div class="user-stats">
+                    <div class="stat">
+                        <div class="numbers">23</div>
+                        <div class="stat-title">Posts</div>
+                    </div>
+                    <div class="stat">
+                        <div class="numbers">1M</div>
+                        <div class="stat-title">Followers</div>
+                    </div>
+                    <div class="stat">
+                        <div class="numbers">32</div>
+                        <div class="stat-title">Following</div>
+                    </div>
                 </div>
-            
+                <div class="profile-text">
+                    <p>
+                        OZUNA 🇵🇷🌎🇩🇴🧸
+                        N I B I R U ☄️☄️
+                        MANAGER @rebecaleon
+                        orcd.co/ozuna100preguntas/youtube
+                    </p>
+                </div>
             </div>
         </section>
         <section id="cast-section"> 
             <div class="row">
                 <div class="col-sm-3 col-md-4">
-                    <h3>Baje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</h3>
+                    <h3>dembowBaje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</h3>
                 </div>
                 <div class="col-sm-3 col-md-2">
                     <h6>Vote</h6>

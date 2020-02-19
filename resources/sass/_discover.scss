@@ -16,6 +16,35 @@ box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
     h2{
         margin-bottom: 2rem;
     }
+    .filter{
+        background: white;
+        width: 100%;
+        display: flex;
+        margin-bottom: 20px;
+        
+        padding: 10px;
+        .filter-selection{
+            margin-right: 20px;
+            label{
+                display: block;
+                font-weight: 900;
+                font-size: .9rem;
+            }
+            select{
+                padding: 10px;
+                background: white;
+                border: 1px solid #2768F7;
+            }
+        }
+    }
+    .first-video{
+        .post.video{
+            .video-image{
+                height: 500px !important;
+            }
+            
+        }
+    }
     .feed-list{
         .post{
             cursor: pointer;

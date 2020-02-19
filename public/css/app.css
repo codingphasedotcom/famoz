@@ -11047,6 +11047,240 @@ a.text-dark:focus {
   opacity: 1;
 }
 
+#profile-content #top-section {
+  background: white;
+  margin-bottom: 2rem;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#profile-content #top-section .user-image {
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-content #top-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+#profile-content #top-section iframe {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+}
+
+#profile-content #top-section .profile-information {
+  padding: 0 20px;
+}
+
+#profile-content #top-section .profile-information h3 {
+  line-height: 0.6;
+}
+
+#profile-content #top-section .profile-information h5 {
+  margin-bottom: 1rem;
+}
+
+#profile-content #top-section .user-title h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#profile-content #top-section .user-title h5 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #949799;
+}
+
+#profile-content #top-section .user-stats {
+  max-width: 400px;
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+#profile-content #top-section .user-stats .stat {
+  display: flex;
+  margin-right: 20px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#profile-content #top-section .user-stats .stat .numbers {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 0.5;
+  margin-right: 5px;
+}
+
+#profile-content #top-section .user-stats .stat .stat-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #949799;
+}
+
+#profile-content #top-section .profile-text p {
+  color: #949799;
+}
+
+#profile-content #cast-section {
+  margin-bottom: 2rem;
+}
+
+#profile-content #cast-section h3 {
+  margin-bottom: 2rem;
+}
+
+#profile-content #cast-section h6 {
+  font-weight: 700;
+}
+
+#profile-content #cast-section .vote-btn {
+  border: 1px solid #EC578F;
+  color: #EC578F;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  height: 50px;
+  width: 100%;
+}
+
+#profile-content #cast-section .vote-btn:hover,
+#profile-content #cast-section .vote-btn.active {
+  background: #EC578F;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+#profile-content #cast-section .cast-members {
+  display: flex;
+  -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+}
+
+#profile-content #cast-section .cast-members .member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  cursor: pointer;
+  margin-right: 10px;
+  scroll-snap-align: center;
+}
+
+#profile-content #cast-section .cast-members .member:hover .user-image {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+#profile-content #cast-section .cast-members .member .user-image {
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  border: 3px solid white;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#profile-content #cast-section .cast-members .member .title {
+  font-size: 0.9rem;
+}
+
+#profile-content .home-jumbo {
+  height: calc(100vh - 200px);
+  width: 100%;
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+  margin-bottom: 2rem;
+}
+
+#profile-content h2 {
+  margin-bottom: 2rem;
+}
+
+#profile-content .comments .comment {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+}
+
+#profile-content .comments .comment .number {
+  font-weight: 100;
+  margin-right: 20px;
+}
+
+#profile-content .comments .comment .user-image {
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+#profile-content .comments .comment .info .name {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+#profile-content .comments .comment .info .message {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#profile-content .editors-list .container .row .col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#profile-content .editors-list .container .row .col-md-6 .box-user {
+  height: 150px;
+  width: 100%;
+  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+  margin-bottom: 2rem;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+#profile-content .editors-list .container .row .col-md-6 .box-user:hover {
+  opacity: 1;
+}
+
 #feed-content .home-jumbo {
   display: block;
   height: calc(100vh - 200px);
@@ -11154,6 +11388,34 @@ a.text-dark:focus {
 
 #discover-content h2 {
   margin-bottom: 2rem;
+}
+
+#discover-content .filter {
+  background: white;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#discover-content .filter .filter-selection {
+  margin-right: 20px;
+}
+
+#discover-content .filter .filter-selection label {
+  display: block;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+#discover-content .filter .filter-selection select {
+  padding: 10px;
+  background: white;
+  border: 1px solid #2768F7;
+}
+
+#discover-content .first-video .post.video .video-image {
+  height: 500px !important;
 }
 
 #discover-content .feed-list .post {
@@ -11342,7 +11604,7 @@ body {
   background: #ffffff;
   color: #465B6E;
   padding: 50px;
-  width: 300px;
+  width: 240px;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -11390,8 +11652,8 @@ body {
 #main-layout .content-area {
   background: #EFF2F9;
   height: 100vh;
-  width: calc(100vw - 300px);
-  transform: translate3d(300px, 0, 0);
+  width: calc(100vw - 240px);
+  transform: translate3d(240px, 0, 0);
   overflow: scroll;
   padding: 50px;
 }

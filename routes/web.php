@@ -26,6 +26,14 @@ Route::get('/video/{test}', function () {
     return view('media/video');
 });
 
+Route::get('/register', function () {
+    // return view('media/video');
+});
+
+Route::get('/login', function () {
+    // return view('media/video');
+});
+
 Route::get('/{username}', function () {
     return view('users/profile');
 });
@@ -35,3 +43,7 @@ Route::get('/{username}/videos', function () {
 });
 
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
