@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,600&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -11069,12 +11069,6 @@ a.text-dark:focus {
   border-radius: 50%;
 }
 
-#profile-content #top-section iframe {
-  width: 100%;
-  height: 600px;
-  border-radius: 5px;
-}
-
 #profile-content #top-section .profile-information {
   padding: 0 20px;
 }
@@ -11083,18 +11077,19 @@ a.text-dark:focus {
   line-height: 0.6;
 }
 
-#profile-content #top-section .profile-information h5 {
+#profile-content #top-section .user-title {
+  margin-top: 2rem;
   margin-bottom: 1rem;
 }
 
 #profile-content #top-section .user-title h3 {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 #profile-content #top-section .user-title h5 {
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #949799;
 }
 
@@ -11108,19 +11103,19 @@ a.text-dark:focus {
   display: flex;
   margin-right: 20px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 #profile-content #top-section .user-stats .stat .numbers {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 1.4rem;
+  font-weight: 600;
   line-height: 0.5;
   margin-right: 5px;
 }
 
 #profile-content #top-section .user-stats .stat .stat-title {
   font-size: 1rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #949799;
 }
 
@@ -11137,13 +11132,13 @@ a.text-dark:focus {
 }
 
 #profile-content #cast-section h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 #profile-content #cast-section .vote-btn {
   border: 1px solid #EC578F;
   color: #EC578F;
-  font-weight: 700;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11158,7 +11153,7 @@ a.text-dark:focus {
 #profile-content #cast-section .vote-btn.active {
   background: #EC578F;
   color: white;
-  font-weight: 700;
+  font-weight: 600;
   padding: 20px;
   text-align: center;
 }
@@ -11247,7 +11242,7 @@ a.text-dark:focus {
 }
 
 #profile-content .comments .comment .info .name {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.2rem;
 }
 
@@ -11279,6 +11274,31 @@ a.text-dark:focus {
 
 #profile-content .editors-list .container .row .col-md-6 .box-user:hover {
   opacity: 1;
+}
+
+@media (max-width: 600px) {
+  #profile-content #top-section {
+    flex-direction: column;
+  }
+
+  #profile-content #top-section .profile-information {
+    padding: 0;
+  }
+
+  #profile-content #top-section .profile-information .user-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #profile-content #top-section .profile-information .user-stats {
+    display: flex;
+    justify-content: center;
+  }
+
+  #profile-content #top-section .profile-information .user-stats .stat:nth-child(3) {
+    margin-right: 0;
+  }
 }
 
 #feed-content .home-jumbo {
@@ -11574,6 +11594,7 @@ a.text-dark:focus {
 
 * {
   box-sizing: border-box !important;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 body {
@@ -11612,7 +11633,7 @@ body {
 
 #main-layout .side-menu .logo {
   color: #2768F7;
-  font-weight: 900;
+  font-weight: 600;
   font-size: 3rem;
   margin-bottom: 1.2rem;
 }

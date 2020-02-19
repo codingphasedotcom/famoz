@@ -1,5 +1,5 @@
 // Fonts
-@import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,600&display=swap');
 
 // Variables
 @import 'variables';
@@ -13,9 +13,11 @@
 @import 'trending';
 *{
     box-sizing: border-box !important;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 body{
     background: #EDF0F9;
+    
 }
 #user-bubble{
     height: 50px;
@@ -51,7 +53,7 @@ body{
 
         .logo{
             color: #2768F7;
-            font-weight: 900;
+            font-weight: 600;
             font-size:3rem;
             margin-bottom: 1.2rem;
         }
