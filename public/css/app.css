@@ -11276,6 +11276,60 @@ a.text-dark:focus {
   opacity: 1;
 }
 
+#profile-tabs .tab-menu {
+  display: flex;
+}
+
+#profile-tabs .tab-menu .tab {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#profile-tabs .tab-menu .tab.active {
+  background: white;
+}
+
+#profile-tabs .tab-content {
+  background: white;
+  padding: 20px;
+}
+
+#profile-tabs .tab-content .tab {
+  display: none;
+}
+
+#profile-tabs .tab-content .tab.active {
+  display: block;
+}
+
+#profile-tabs .tab-content .video-post {
+  margin-bottom: 20px;
+}
+
+#profile-tabs .tab-content .video-post img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#profile-tabs .tab-content .video-post .video-title {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
+
+#profile-tabs .tab-content .video-post .video-info {
+  display: block;
+  font-size: 0.9rem;
+}
+
 @media (max-width: 600px) {
   #profile-content #top-section {
     flex-direction: column;
@@ -11687,6 +11741,18 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content-box {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: white;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 1rem;
+  box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
 }
 
 @media (max-width: 960.98px) {
