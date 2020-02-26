@@ -11708,7 +11708,7 @@ h6 {
   color: #465b6e;
   padding: 50px;
   width: 240px;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
 }
