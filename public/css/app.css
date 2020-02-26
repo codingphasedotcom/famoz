@@ -11667,7 +11667,7 @@ a.text-dark:focus {
 }
 
 body {
-  background: #EDF0F9;
+  background: #edf0f9;
 }
 
 label {
@@ -11705,7 +11705,7 @@ h6 {
 
 #main-layout .side-menu {
   background: #ffffff;
-  color: #465B6E;
+  color: #465b6e;
   padding: 50px;
   width: 240px;
   position: absolute;
@@ -11745,7 +11745,7 @@ h6 {
 #main-layout .side-menu .links a {
   padding: 0;
   margin-bottom: 1.2rem;
-  color: #2768F7;
+  color: #2768f7;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -11753,24 +11753,24 @@ h6 {
 }
 
 #main-layout .side-menu .links a:hover {
-  color: #EC578F;
+  color: #ec578f;
 }
 
 #main-layout .side-menu .links a:hover .fas,
 #main-layout .side-menu .links a:hover .far {
-  color: #EC578F !important;
+  color: #ec578f !important;
 }
 
 #main-layout .side-menu .links a .fas,
 #main-layout .side-menu .links a .far {
-  color: #2768F7 !important;
+  color: #2768f7 !important;
   font-size: 1rem;
   margin-right: 1rem;
   color: blue;
 }
 
 #main-layout .content-area {
-  background: #EFF2F9;
+  background: #eff2f9;
   height: 100vh;
   width: calc(100vw - 240px);
   transform: translate3d(240px, 0, 0);
@@ -11779,7 +11779,7 @@ h6 {
 }
 
 #main-layout .content-area a {
-  color: #2768F7;
+  color: #2768f7;
 }
 
 #filter {
@@ -11803,7 +11803,7 @@ h6 {
 #filter .filter-selection select {
   padding: 10px;
   background: white;
-  border: 1px solid #2768F7;
+  border: 1px solid #2768f7;
   width: 200px;
 }
 
@@ -11873,8 +11873,11 @@ h6 {
 
   #main-layout .content-area {
     transform: translate3d(0, 0, 0);
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
     width: 100%;
-    padding: 20px;
+    padding: 20px 10px 0;
   }
 }
 
