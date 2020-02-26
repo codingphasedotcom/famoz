@@ -75,21 +75,24 @@
                 <div class="links">
                     <a href="/">
                         <i class="fas fa-home"></i>
-                        <span>Feed</span>
+                        <span>{{ __('feed') }}</span>
                     </a>
                     <a href="/discover"> 
                         <i class="fas fa-globe-americas"></i> 
-                        <span>Discover</span>
+                        <span>{{ __('discover') }}</span>
+                    </a>
+                    <a href="/post" class="upload-btn">
+                        <i class="fas fa-plus-square"></i>
+                        <span>{{ __('upload') }}</span>
                     </a>
                     <a href="/trending">
                         <i class="fas fa-chart-line"></i>
-                        <span>Trending</span>
-                        </a>
+                        <span>{{ __('trending') }}</span>
+                    </a>
                     <a href="#">
                         <i class="fas fa-cog"></i>
-                        <span>settings</span>
+                        <span>{{ __('settings') }}</span>
                         </a>
-                    
                 </div>
             </div>
             <div class="content-area">

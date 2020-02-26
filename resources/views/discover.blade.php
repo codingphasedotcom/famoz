@@ -4,25 +4,25 @@
 
 @section('content')
     <div id="discover-content">
-            <div class="filter">
+            <section id="filter">
                 <div class="filter-selection">
-                    <label>Genre</label>
+                    <label>{{ __('genre') }}</label>
                     <select>
+                        <option>All</option>
                         <option>Reggaeton</option>
                         <option>Dembow</option>
                         <option>Trap</option>
                     </select>
                 </div>
                 <div class="filter-selection">
-                    <label>Date</label>
+                    <label>{{ __('date') }}</label>
                     <select>
-                        <option>Today</option>
-                        <option>This Week</option>
-                        <option>This Month</option>
+                        <option>{{ __('Today') }}</option>
+                        <option>{{ __('This Week') }}</option>
+                        <option>{{ __('This Month') }}</option>
                     </select>
                 </div>
-
-            </div>
+            </section>
             <div class="feed-list row">
                 <div class="col-sm-12 first-video">
                     <div class="post video">

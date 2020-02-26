@@ -3,6 +3,25 @@
 @section('title', 'Page Title')
 
 @section('content')
+    <section id="filter">
+        <div class="filter-selection">
+            <label>{{ __('genre') }}</label>
+            <select>
+                <option>All</option>
+                <option>Reggaeton</option>
+                <option>Dembow</option>
+                <option>Trap</option>
+            </select>
+        </div>
+        <div class="filter-selection">
+            <label>{{ __('date') }}</label>
+            <select>
+                <option>{{ __('Today') }}</option>
+                <option>{{ __('This Week') }}</option>
+                <option>{{ __('This Month') }}</option>
+            </select>
+        </div>
+    </section>
     <div id="trending-content">
         <a href="/video/baje-con-trenza" class="home-jumbo">
             <div class="title">
@@ -11,7 +30,7 @@
         </a>
         <div class="row">
             <div class="col-md-6">
-                <h2>Trending Today</h2>
+                <h2>{{ __('trending') }}</h2>
                 <div class="trending-list">
                     <div class="video">
                         <div class="number">01</div>
@@ -88,7 +107,7 @@
                 </div>
             </div>
             <div class="col-md-3 editors-list">
-                <h2>Editors Choice</h2>
+                <h2>{{ __('editors choice') }}</h2>
                 <div class="box-user">
                 </div>
                 <div class="box-user">

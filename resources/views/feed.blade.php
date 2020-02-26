@@ -53,7 +53,7 @@
                 </div>
             </div>
             <div class="col-md-3 notifications-list">
-                <h2>Notifications</h2>
+                <h2>{{ __('notifications') }}</h2>
                 <div class="box-user">
                 </div>
                 <div class="box-user">

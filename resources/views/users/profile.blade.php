@@ -54,7 +54,8 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats">12,988 views testing - <i class="fas fa-heart"></i></span>
+                                        
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -116,7 +117,7 @@
                         </div>
                         <div class="col-md-12 col-lg-3">
                             <div class="video-post">
-                                
+                                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/6bc5b433427407.56aa8c7f96f3c.jpg">
                             </div>
                         </div>
                     </div>
@@ -125,66 +126,16 @@
                     <div class="row">
                         <div class="col-md-12 col-lg-9">
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-12">
                                     <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="video-post">
-                                        <a href="#">
-                                            <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
-                                        </a>
-                                        <span class="video-title">Baje Con Trenza</span>
-                                        <span class="video-info">12,988 views</span>
+                                        <p>Venmo hexagon tacos shabby chic, 8-bit viral vegan. Ramps bespoke four loko brunch pickled listicle polaroid single-origin coffee yr thundercats master cleanse authentic banjo vegan. Semiotics distillery man bun iPhone wayfarers, cray lo-fi freegan. Bitters franzen sriracha, subway tile fixie tattooed VHS single-origin coffee mustache church-key blog YOLO edison bulb. Banh mi unicorn literally forage before they sold out chicharrones selvage pinterest schlitz celiac skateboard butcher artisan selfies.</p>
                                     </div>
                                 </div>
                             </div>
-                            
                         </div>
                         <div class="col-md-12 col-lg-3">
                             <div class="video-post">
-                                
+                                <span class="post-stats">12,988 views</span>
                             </div>
                         </div>
                     </div>

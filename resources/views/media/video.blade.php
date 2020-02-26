@@ -9,6 +9,7 @@
             <div class="row">
                 <div class="col-md-9">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe4b0jSHYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="video-title">Baje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</span>
                 </div>
                 <div class="col-md-3 ad-space d-none d-md-block d-lg-block d-xl-block">
                     <img src="/img/160x600ad.jpeg">
@@ -16,20 +17,25 @@
             
             </div>
         </section>
-        <section id="cast-section"> 
+        <section id="info-section"> 
             <div class="row">
-                <div class="col-sm-3 col-md-4">
-                    <h3>Baje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</h3>
+                <div class="col-sm-6 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
+                    <a href="/ozuna" class="profile-link">Ozuna</a>
                 </div>
-                <div class="col-sm-3 col-md-2">
-                    <h6>Vote</h6>
-                    <div class="vote-btn">
-                        <i class="fas fa-heart"></i>
-                    </div>
-
+                <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
+                    {{-- <h6>Vote</h6> --}}
+                    <a href="/video/like" class="vote-btn">
+                        <i class="fas fa-fire-alt"></i>
+                    </a>
+                </div>
+                <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
+                    {{-- <h6>Repost</h6> --}}
+                    <a href="/video/repost" class="repost-btn">
+                        <i class="fas fa-retweet"></i>
+                    </a>
                 </div>
                 <div class="col-sm-12 col-md-6">
-                    <h6>Crew</h6>
+                    <h6>{{ __('crew') }}</h6>
                     <div class="cast-members">
                         <div class="member">
                             <img src="https://randomuser.me/api/portraits/men/32.jpg" class="user-image">

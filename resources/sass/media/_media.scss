@@ -1,21 +1,30 @@
 #media-content{
     #top-section{
-        margin-bottom: 2rem;
+        margin-bottom: 1;
         iframe{
             width: 100%;
             height: 600px;
             border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+        .video-title{
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            font-weight: 900;
+            display: block;
         }
     }
-    #cast-section{
+    #info-section{
         margin-bottom: 2rem;
-        h3{
-            margin-bottom: 2rem;
+        
+        .profile-link{
+            font-size: 1.2rem;
+            // display: block;
         }
         h6{
             font-weight: 700;
         }
-        .vote-btn{
+        a.vote-btn{
             border: 1px solid #EC578F;
             color: #EC578F;
             font-weight: 700;
@@ -24,11 +33,35 @@
             align-items: center;
             border-radius: 5px;
             cursor: pointer;
-            margin-bottom: 2rem;
+            // margin-bottom: 10px;
             height: 50px;
             width: 100%;
+            text-decoration: none;
             &:hover, &.active{
                 background: #EC578F;
+                color: white;
+                font-weight: 700;
+                padding:20px;
+                text-align: center;
+                
+            }
+        }
+        a.repost-btn{
+            border: 1px solid #2768F7;
+            color: #2768F7;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            cursor: pointer;
+            // margin-bottom: 10px;
+            height: 50px;
+            width: 100%;
+            text-decoration: none;
+
+            &:hover, &.active{
+                background: #2768F7;
                 color: white;
                 font-weight: 700;
                 padding:20px;
@@ -157,5 +190,10 @@ box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
             }
         }
         
+    }
+}
+@media (max-width: 960.98px) {
+    #media-content #info-section .vote-btn, #media-content #info-section .repost-btn {
+        margin-bottom: 10px;
     }
 }

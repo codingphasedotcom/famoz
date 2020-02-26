@@ -10885,28 +10885,36 @@ a.text-dark:focus {
 }
 
 #media-content #top-section {
-  margin-bottom: 2rem;
+  margin-bottom: 1;
 }
 
 #media-content #top-section iframe {
   width: 100%;
   height: 600px;
   border-radius: 5px;
+  margin-bottom: 1rem;
 }
 
-#media-content #cast-section {
+#media-content #top-section .video-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  display: block;
+}
+
+#media-content #info-section {
   margin-bottom: 2rem;
 }
 
-#media-content #cast-section h3 {
-  margin-bottom: 2rem;
+#media-content #info-section .profile-link {
+  font-size: 1.2rem;
 }
 
-#media-content #cast-section h6 {
+#media-content #info-section h6 {
   font-weight: 700;
 }
 
-#media-content #cast-section .vote-btn {
+#media-content #info-section a.vote-btn {
   border: 1px solid #EC578F;
   color: #EC578F;
   font-weight: 700;
@@ -10915,13 +10923,13 @@ a.text-dark:focus {
   align-items: center;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 2rem;
   height: 50px;
   width: 100%;
+  text-decoration: none;
 }
 
-#media-content #cast-section .vote-btn:hover,
-#media-content #cast-section .vote-btn.active {
+#media-content #info-section a.vote-btn:hover,
+#media-content #info-section a.vote-btn.active {
   background: #EC578F;
   color: white;
   font-weight: 700;
@@ -10929,14 +10937,37 @@ a.text-dark:focus {
   text-align: center;
 }
 
-#media-content #cast-section .cast-members {
+#media-content #info-section a.repost-btn {
+  border: 1px solid #2768F7;
+  color: #2768F7;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 50px;
+  width: 100%;
+  text-decoration: none;
+}
+
+#media-content #info-section a.repost-btn:hover,
+#media-content #info-section a.repost-btn.active {
+  background: #2768F7;
+  color: white;
+  font-weight: 700;
+  padding: 20px;
+  text-align: center;
+}
+
+#media-content #info-section .cast-members {
   display: flex;
   -ms-scroll-snap-type: x mandatory;
       scroll-snap-type: x mandatory;
   overflow-x: scroll;
 }
 
-#media-content #cast-section .cast-members .member {
+#media-content #info-section .cast-members .member {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10947,12 +10978,12 @@ a.text-dark:focus {
   scroll-snap-align: center;
 }
 
-#media-content #cast-section .cast-members .member:hover .user-image {
+#media-content #info-section .cast-members .member:hover .user-image {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
 
-#media-content #cast-section .cast-members .member .user-image {
+#media-content #info-section .cast-members .member .user-image {
   border-radius: 50%;
   height: 70px;
   width: 70px;
@@ -10965,7 +10996,7 @@ a.text-dark:focus {
      object-position: center;
 }
 
-#media-content #cast-section .cast-members .member .title {
+#media-content #info-section .cast-members .member .title {
   font-size: 0.9rem;
 }
 
@@ -11045,6 +11076,13 @@ a.text-dark:focus {
 
 #media-content .editors-list .container .row .col-md-6 .box-user:hover {
   opacity: 1;
+}
+
+@media (max-width: 960.98px) {
+  #media-content #info-section .vote-btn,
+  #media-content #info-section .repost-btn {
+    margin-bottom: 10px;
+  }
 }
 
 #profile-content #top-section {
@@ -11325,7 +11363,8 @@ a.text-dark:focus {
   font-weight: 900;
 }
 
-#profile-tabs .tab-content .video-post .video-info {
+#profile-tabs .tab-content .post-stats {
+  color: #949799;
   display: block;
   font-size: 0.9rem;
 }
@@ -11462,30 +11501,6 @@ a.text-dark:focus {
 
 #discover-content h2 {
   margin-bottom: 2rem;
-}
-
-#discover-content .filter {
-  background: white;
-  width: 100%;
-  display: flex;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-#discover-content .filter .filter-selection {
-  margin-right: 20px;
-}
-
-#discover-content .filter .filter-selection label {
-  display: block;
-  font-weight: 900;
-  font-size: 0.9rem;
-}
-
-#discover-content .filter .filter-selection select {
-  padding: 10px;
-  background: white;
-  border: 1px solid #2768F7;
 }
 
 #discover-content .first-video .post.video .video-image {
@@ -11655,6 +11670,19 @@ body {
   background: #EDF0F9;
 }
 
+label {
+  text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: capitalize;
+}
+
 #user-bubble {
   height: 50px;
   width: 50px;
@@ -11686,7 +11714,10 @@ body {
 }
 
 #main-layout .side-menu .logo {
-  color: #2768F7;
+  background: #ff0303;
+  background: linear-gradient(34deg, #a20cc5 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-weight: 600;
   font-size: 3rem;
   margin-bottom: 1.2rem;
@@ -11695,6 +11726,20 @@ body {
 #main-layout .side-menu .links {
   display: flex;
   flex-direction: column;
+}
+
+#main-layout .side-menu .links .upload-btn {
+  background: #ff0303;
+  background: linear-gradient(34deg, #a20cc5 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#main-layout .side-menu .links .upload-btn .fa-plus-square {
+  background: #ff0303;
+  background: linear-gradient(34deg, #a20cc5 0%, #00d4ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 #main-layout .side-menu .links a {
@@ -11734,7 +11779,32 @@ body {
 }
 
 #main-layout .content-area a {
-  color: #2768F7 !important;
+  color: #2768F7;
+}
+
+#filter {
+  background: white;
+  width: 100%;
+  display: flex;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+#filter .filter-selection {
+  margin-right: 20px;
+}
+
+#filter .filter-selection label {
+  display: block;
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
+#filter .filter-selection select {
+  padding: 10px;
+  background: white;
+  border: 1px solid #2768F7;
+  width: 200px;
 }
 
 .ad-space {
@@ -11756,11 +11826,16 @@ body {
 }
 
 @media (max-width: 960.98px) {
+  #user-bubble {
+    display: none;
+  }
+
   #main-layout .side-menu {
     z-index: 10;
     top: auto;
     padding: 0;
     width: 100%;
+    box-shadow: 0px -10px 45px 0px rgba(13, 102, 255, 0.48);
   }
 
   #main-layout .side-menu .links {
