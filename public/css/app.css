@@ -11104,6 +11104,10 @@ a.text-dark:focus {
 #profile-content #top-section img {
   width: 150px;
   height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 50%;
 }
 
@@ -11174,8 +11178,8 @@ a.text-dark:focus {
 }
 
 #profile-content #cast-section .vote-btn {
-  border: 1px solid #EC578F;
-  color: #EC578F;
+  border: 1px solid #ec578f;
+  color: #ec578f;
   font-weight: 600;
   display: flex;
   justify-content: center;
@@ -11189,7 +11193,7 @@ a.text-dark:focus {
 
 #profile-content #cast-section .vote-btn:hover,
 #profile-content #cast-section .vote-btn.active {
-  background: #EC578F;
+  background: #ec578f;
   color: white;
   font-weight: 600;
   padding: 20px;
@@ -11786,12 +11790,14 @@ h6 {
   background: white;
   width: 100%;
   display: flex;
+  align-items: stretch;
   margin-bottom: 20px;
   padding: 10px;
 }
 
 #filter .filter-selection {
   margin-right: 20px;
+  flex-grow: 2;
 }
 
 #filter .filter-selection label {
@@ -11804,7 +11810,7 @@ h6 {
   padding: 10px;
   background: white;
   border: 1px solid #2768f7;
-  width: 200px;
+  width: 100%;
 }
 
 .ad-space {

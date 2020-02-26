@@ -7,12 +7,13 @@
     <div id="profile-content">
         <section id="top-section">
             <div class="user-image">
-                <img loading="lazy" src="https://i1.sndcdn.com/avatars-000720436693-hfwlc7-t500x500.jpg">
+                <img loading="lazy" src="{{$user->image_url}}">
             </div>
             <div class="profile-information">
                 <div class="user-title">
-                    <h3>@ozuna</h3>
-                    <h5>Juan Carlos Ozuna Rosado</h5>
+                    <h3>@
+                    {{$user->username}}</h3>
+                    <h5>{{$user->full_name}}</h5>
                 </div>
                 <div class="user-stats">
                     <div class="stat">
@@ -30,10 +31,7 @@
                 </div>
                 <div class="profile-text">
                     <p>
-                        OZUNA 🇵🇷🌎🇩🇴🧸
-                        N I B I R U ☄️☄️
-                        MANAGER @rebecaleon
-                        orcd.co/ozuna100preguntas/youtube
+                        {{$user->description}}
                     </p>
                 </div>
             </div>

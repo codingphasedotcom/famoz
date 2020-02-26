@@ -69,14 +69,22 @@
     </div>
         <div id="main-layout">
             <div class="side-menu">
+                
                 <a href="/" class="logo">
-                Famoz
+                    Famoz
                 </a>
                 <div class="links">
-                    <a href="/">
-                        <i class="fas fa-home"></i>
-                        <span>{{ __('feed') }}</span>
-                    </a>
+                    @guest
+                        <a href="/register">
+                            <i class="fas fa-home"></i>
+                            <span>{{ __('feed') }}</span>
+                        </a>      
+                    @else
+                        <a href="/">
+                            <i class="fas fa-home"></i>
+                            <span>{{ __('feed') }}</span>
+                        </a>
+                    @endguest
                     <a href="/discover"> 
                         <i class="fas fa-globe-americas"></i> 
                         <span>{{ __('discover') }}</span>
@@ -89,10 +97,17 @@
                         <i class="fas fa-chart-line"></i>
                         <span>{{ __('trending') }}</span>
                     </a>
-                    <a href="#">
-                        <i class="fas fa-cog"></i>
-                        <span>{{ __('settings') }}</span>
+                    @guest
+                        <a href="/register">
+                            <i class="fas fa-cog"></i>
+                            <span>{{ __('settings') }}</span>
+                        </a>      
+                    @else
+                        <a href="/{{ Auth::user()->username }}">
+                            <i class="fas fa-cog"></i>
+                            <span>{{ __('settings') }}</span>
                         </a>
+                    @endguest
                 </div>
             </div>
             <div class="content-area">

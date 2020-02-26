@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use App\AccountType;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -28,7 +29,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/';
 
     /**
      * Create a new controller instance.
@@ -64,12 +65,28 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
-            'username' => $data['username'],
-            'full_name' => $data['full_name'],
-            'email' => $data['email'],
-            'account_type_id' => $data['account_type_id'],
-            'password' => Hash::make($data['password']),
+        request()->validate([
+            'username' => ['required', 'string', 'max:255'],
+            'full_name' => ['required', 'string', 'max:255'],
+            'email' => ['required', 'string', 'email', 'max:255'],
+            'password' => ['required', 'string', 'min:8', 'confirmed'],
+            'account_type_id' => ['required']
         ]);
+        $user = new User();
+        $user->username = request('username');
+        $user->full_name = request('full_name');
+        $user->email = request('email');
+        $user->password = Hash::make(request('password'));
+        $user->save();
+        $user->account_types()->attach(request('account_type_id'));
+
+       
+        return $user;
+        // return User::create([
+        //     'username' => $data['username'],
+        //     'full_name' => $data['full_name'],
+        //     'email' => $data['email'],
+        //     'password' => Hash::make($data['password']),
+        // ]);
     }
 }
