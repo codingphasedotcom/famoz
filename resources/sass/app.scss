@@ -110,6 +110,7 @@ h6 {
                     }
                 }
                 .fas,
+                .fab,
                 .far {
                     color: #2768f7 !important;
                     font-size: 1rem;
@@ -171,6 +172,15 @@ h6 {
     margin-bottom: 1rem;
     box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
 }
+.post-stats {
+    color: #949799;
+    display: block;
+    font-size: 0.9rem;
+    i:nth-child(2),
+    i:nth-child(3) {
+        margin-left: 10px;
+    }
+}
 
 @media (max-width: 960.98px) {
     #user-bubble {
@@ -203,6 +213,7 @@ h6 {
                     padding: 0;
                     margin: 0;
                     .fas,
+                    .fab,
                     .far {
                         font-size: 1.7rem;
                         margin: 0;

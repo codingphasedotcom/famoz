@@ -19,11 +19,12 @@ class UserController extends Controller
                 $user = User::where('username', $username)->get()[0];
             }
         } else {
-            $user = User::where('username', $username)->get()[0];
+            $user = User::where('username', $username)->get();
             // return $user;
             if(sizeof($user) < 1) {
                 return view('errors.404');
             }
+            $user = $user[0];
         }
         // return $user;
 

@@ -11124,6 +11124,10 @@ a.text-dark:focus {
   margin-bottom: 1rem;
 }
 
+#profile-content #top-section .user-title .fa-check-square {
+  color: #3d84ff;
+}
+
 #profile-content #top-section .user-title h3 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -11365,12 +11369,6 @@ a.text-dark:focus {
   display: block;
   font-size: 0.9rem;
   font-weight: 900;
-}
-
-#profile-tabs .tab-content .post-stats {
-  color: #949799;
-  display: block;
-  font-size: 0.9rem;
 }
 
 @media (max-width: 600px) {
@@ -11766,6 +11764,7 @@ h6 {
 }
 
 #main-layout .side-menu .links a .fas,
+#main-layout .side-menu .links a .fab,
 #main-layout .side-menu .links a .far {
   color: #2768f7 !important;
   font-size: 1rem;
@@ -11831,6 +11830,17 @@ h6 {
   box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
 }
 
+.post-stats {
+  color: #949799;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.post-stats i:nth-child(2),
+.post-stats i:nth-child(3) {
+  margin-left: 10px;
+}
+
 @media (max-width: 960.98px) {
   #user-bubble {
     display: none;
@@ -11864,6 +11874,7 @@ h6 {
   }
 
   #main-layout .side-menu .links a .fas,
+  #main-layout .side-menu .links a .fab,
   #main-layout .side-menu .links a .far {
     font-size: 1.7rem;
     margin: 0;

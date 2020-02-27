@@ -37,6 +37,9 @@
         .user-title {
             margin-top: 2rem;
             margin-bottom: 1rem;
+            .fa-check-square {
+                color: rgb(61, 132, 255);
+            }
             h3 {
                 font-size: 1.4rem;
                 font-weight: 600;
@@ -262,11 +265,6 @@
                 font-size: 0.9rem;
                 font-weight: 900;
             }
-        }
-        .post-stats {
-            color: #949799;
-            display: block;
-            font-size: 0.9rem;
         }
     }
 }

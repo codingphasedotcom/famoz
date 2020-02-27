@@ -11,9 +11,8 @@
             </div>
             <div class="profile-information">
                 <div class="user-title">
-                    <h3>@
-                    {{$user->username}}</h3>
-                    <h5>{{$user->full_name}}</h5>
+                    <h3>{{'@' . $user->username}} <i class="fas fa-check-square"></i></h3>
+                    {{-- <h5>{{$user->full_name}}</h5> --}}
                 </div>
                 <div class="user-stats">
                     <div class="stat">
@@ -52,7 +51,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="post-stats">12,988 views testing - <i class="fas fa-heart"></i></span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                         
                                     </div>
                                 </div>
@@ -62,7 +61,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -71,7 +70,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -80,7 +79,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -89,7 +88,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -98,7 +97,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
@@ -107,7 +106,7 @@
                                             <img loading="lazy" src="https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg">
                                         </a>
                                         <a href="/video/baje-con-trenza" class="video-title">Baje Con Trenza</a>
-                                        <span class="video-info">12,988 views</span>
+                                        <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                     </div>
                                 </div>
                             </div>

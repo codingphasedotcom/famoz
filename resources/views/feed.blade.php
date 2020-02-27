@@ -17,6 +17,7 @@
                             </div>
                             <div>
                                 <div class="title">Baje Con Trenza Remix</div>
+                                <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                 <div class="artist">El Cherry Scom, Kiko El Crazy, Ozuna
                                 </div>
                             </div>
@@ -32,6 +33,7 @@
                             </div>
                             <div>
                                 <div class="title">Baje Con Trenza Remix</div>
+                                <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                 <div class="artist">El Cherry Scom
                                 </div>
                             </div>
@@ -45,6 +47,7 @@
                             </div>
                             <div>
                                 <div class="title">Baje Con Trenza Remix</div>
+                                <span class="post-stats"><i class="fas fa-eye"></i> 121,988 <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
                                 <div class="artist">El Cherry Scom, Kiko El Crazy, Ozuna
                                 </div>
                             </div>

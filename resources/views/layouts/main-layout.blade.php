@@ -69,24 +69,23 @@
     </div>
         <div id="main-layout">
             <div class="side-menu">
-                
                 <a href="/" class="logo">
                     Famoz
                 </a>
                 <div class="links">
                     @guest
                         <a href="/register">
-                            <i class="fas fa-home"></i>
+                            <i class="fab fa-buffer"></i>
                             <span>{{ __('feed') }}</span>
                         </a>      
                     @else
                         <a href="/">
-                            <i class="fas fa-home"></i>
+                            <i class="fab fa-buffer"></i>
                             <span>{{ __('feed') }}</span>
                         </a>
                     @endguest
                     <a href="/discover"> 
-                        <i class="fas fa-globe-americas"></i> 
+                        <i class="fas fa-tv"></i>
                         <span>{{ __('discover') }}</span>
                     </a>
                     <a href="/post" class="upload-btn">
@@ -99,12 +98,12 @@
                     </a>
                     @guest
                         <a href="/register">
-                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-user-circle"></i>
                             <span>{{ __('settings') }}</span>
                         </a>      
                     @else
                         <a href="/{{ Auth::user()->username }}">
-                            <i class="fas fa-cog"></i>
+                            <i class="fas fa-user-circle"></i>
                             <span>{{ __('settings') }}</span>
                         </a>
                     @endguest
