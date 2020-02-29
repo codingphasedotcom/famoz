@@ -8,7 +8,7 @@
         <section id="top-section">
             <div class="row">
                 <div class="col-md-9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe4b0jSHYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe4b0jSHYI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <span class="video-title">Baje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</span>
                 </div>
                 <div class="col-md-3 ad-space d-none d-md-block d-lg-block d-xl-block">

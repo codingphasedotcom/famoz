@@ -64,9 +64,14 @@
         <script src="https://kit.fontawesome.com/5d7449fda0.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div id="user-bubble">
-        
-    </div>
+    @guest
+        <a href="/" id="user-bubble" style="background: url('');background-position: center;
+    background-size: cover;"></a>    
+    @else
+        <a href="/" id="user-bubble" style="background: url('{{ Auth::user()->image_url }}');background-position: center;
+    background-size: cover;"></a>   
+    @endguest
+    
         <div id="main-layout">
             <div class="side-menu">
                 <a href="/" class="logo">
@@ -74,7 +79,7 @@
                 </a>
                 <div class="links">
                     @guest
-                        <a href="/register">
+                        <a href="/login">
                             <i class="fab fa-buffer"></i>
                             <span>{{ __('feed') }}</span>
                         </a>      
@@ -97,7 +102,7 @@
                         <span>{{ __('trending') }}</span>
                     </a>
                     @guest
-                        <a href="/register">
+                        <a href="/login">
                             <i class="fas fa-user-circle"></i>
                             <span>{{ __('settings') }}</span>
                         </a>      

@@ -22,10 +22,13 @@ Route::get('/video/{test}', 'MediaController@showVideo');
 
 
 
+Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
+Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
 Auth::routes();
 Route::get('/{username}', 'UserController@profile');
 Route::get('/{username}/videos', 'UserController@videos');
+
 
 
 

@@ -1,32 +1,32 @@
-#media-content{
-    #top-section{
+#media-content {
+    #top-section {
         margin-bottom: 1;
-        iframe{
+        iframe {
             width: 100%;
             height: 600px;
             border-radius: 5px;
             margin-bottom: 1rem;
         }
-        .video-title{
+        .video-title {
             font-size: 1.2rem;
             margin-bottom: 1rem;
             font-weight: 900;
             display: block;
         }
     }
-    #info-section{
+    #info-section {
         margin-bottom: 2rem;
-        
-        .profile-link{
+
+        .profile-link {
             font-size: 1.2rem;
             // display: block;
         }
-        h6{
+        h6 {
             font-weight: 700;
         }
-        a.vote-btn{
-            border: 1px solid #EC578F;
-            color: #EC578F;
+        a.vote-btn {
+            border: 1px solid #ec578f;
+            color: #ec578f;
             font-weight: 700;
             display: flex;
             justify-content: center;
@@ -37,18 +37,18 @@
             height: 50px;
             width: 100%;
             text-decoration: none;
-            &:hover, &.active{
-                background: #EC578F;
+            &:hover,
+            &.active {
+                background: #ec578f;
                 color: white;
                 font-weight: 700;
-                padding:20px;
+                padding: 20px;
                 text-align: center;
-                
             }
         }
-        a.repost-btn{
-            border: 1px solid #2768F7;
-            color: #2768F7;
+        a.repost-btn {
+            border: 1px solid #2768f7;
+            color: #2768f7;
             font-weight: 700;
             display: flex;
             justify-content: center;
@@ -60,20 +60,20 @@
             width: 100%;
             text-decoration: none;
 
-            &:hover, &.active{
-                background: #2768F7;
+            &:hover,
+            &.active {
+                background: #2768f7;
                 color: white;
                 font-weight: 700;
-                padding:20px;
+                padding: 20px;
                 text-align: center;
-                
             }
         }
-        .cast-members{
+        .cast-members {
             display: flex;
             scroll-snap-type: x mandatory;
             overflow-x: scroll;
-            .member{
+            .member {
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -82,12 +82,12 @@
                 cursor: pointer;
                 margin-right: 10px;
                 scroll-snap-align: center;
-                &:hover{
-                    .user-image{
+                &:hover {
+                    .user-image {
                         filter: grayscale(0);
                     }
                 }
-                .user-image{
+                .user-image {
                     border-radius: 50%;
                     height: 70px;
                     width: 70px;
@@ -96,33 +96,32 @@
                     object-fit: cover;
                     object-position: center;
                 }
-                .title{
-                    font-size: .9rem;
+                .title {
+                    font-size: 0.9rem;
                 }
             }
         }
     }
-    
-    
-    .home-jumbo{
+
+    .home-jumbo {
         height: calc(100vh - 200px);
         width: 100%;
-        background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+        background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
         background-position: center;
         background-size: cover;
         border-radius: 5px;
         cursor: pointer;
-        -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
--moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+        -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+        -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+        box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
         margin-bottom: 2rem;
     }
-    h2{
+    h2 {
         margin-bottom: 2rem;
     }
-    
-    .comments{
-        .comment{
+
+    .comments {
+        .comment {
             cursor: pointer;
             display: flex;
             justify-content: flex-start;
@@ -131,69 +130,87 @@ box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
             border-radius: 5px;
             padding: 20px;
             margin-bottom: 1rem;
-            -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
--moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            .number{
+            -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            .number {
                 font-weight: 100;
                 margin-right: 20px;
             }
-            .user-image{
-                background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+            .user-image {
+                background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
                 background-position: center;
                 background-size: cover;
                 border-radius: 50%;
                 width: 50px;
-                height:50px;
+                height: 50px;
                 margin-right: 20px;
             }
-            .info{
-                
-                .name{
+            .info {
+                .name {
                     font-weight: 700;
                     font-size: 1.2rem;
                 }
-                .message{
+                .message {
                     font-weight: 500;
                     font-size: 1rem;
                 }
             }
         }
     }
-    .editors-list{
-        .container{
-            .row{
-                .col-md-6{
+    .editors-list {
+        .container {
+            .row {
+                .col-md-6 {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
-                    .box-user{
+                    .box-user {
                         height: 150px;
                         width: 100%;
-                        background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+                        background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
                         background-position: center;
                         background-size: cover;
                         border-radius: 5px;
                         cursor: pointer;
-                        -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-                        -moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-                        box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+                        -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+                        -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+                        box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
                         margin-bottom: 2rem;
-                        opacity: .5;
-                        transition: opacity .3s ease-in-out;
-                        &:hover{
+                        opacity: 0.5;
+                        transition: opacity 0.3s ease-in-out;
+                        &:hover {
                             opacity: 1;
                         }
                     }
                 }
             }
         }
-        
     }
 }
 @media (max-width: 960.98px) {
-    #media-content #info-section .vote-btn, #media-content #info-section .repost-btn {
+    #media-content #info-section .vote-btn,
+    #media-content #info-section .repost-btn {
         margin-bottom: 10px;
+    }
+    #media-content {
+        #top-section {
+            margin-top: -20px;
+            margin-right: -10px;
+            margin-left: -10px;
+            iframe {
+                width: 100%;
+                height: 100vh;
+                border-radius: 0;
+                margin-bottom: 1rem;
+            }
+            .video-title {
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                font-weight: 900;
+                display: block;
+            }
+        }
     }
 }

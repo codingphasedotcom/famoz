@@ -10915,8 +10915,8 @@ a.text-dark:focus {
 }
 
 #media-content #info-section a.vote-btn {
-  border: 1px solid #EC578F;
-  color: #EC578F;
+  border: 1px solid #ec578f;
+  color: #ec578f;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -10930,7 +10930,7 @@ a.text-dark:focus {
 
 #media-content #info-section a.vote-btn:hover,
 #media-content #info-section a.vote-btn.active {
-  background: #EC578F;
+  background: #ec578f;
   color: white;
   font-weight: 700;
   padding: 20px;
@@ -10938,8 +10938,8 @@ a.text-dark:focus {
 }
 
 #media-content #info-section a.repost-btn {
-  border: 1px solid #2768F7;
-  color: #2768F7;
+  border: 1px solid #2768f7;
+  color: #2768f7;
   font-weight: 700;
   display: flex;
   justify-content: center;
@@ -10953,7 +10953,7 @@ a.text-dark:focus {
 
 #media-content #info-section a.repost-btn:hover,
 #media-content #info-section a.repost-btn.active {
-  background: #2768F7;
+  background: #2768f7;
   color: white;
   font-weight: 700;
   padding: 20px;
@@ -11082,6 +11082,26 @@ a.text-dark:focus {
   #media-content #info-section .vote-btn,
   #media-content #info-section .repost-btn {
     margin-bottom: 10px;
+  }
+
+  #media-content #top-section {
+    margin-top: -20px;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  #media-content #top-section iframe {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    margin-bottom: 1rem;
+  }
+
+  #media-content #top-section .video-title {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 900;
+    display: block;
   }
 }
 
@@ -11693,9 +11713,6 @@ h6 {
   top: 10px;
   right: 50px;
   z-index: 100;
-  background: url("https://randomuser.me/api/portraits/women/44.jpg");
-  background-position: center;
-  background-size: cover;
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
