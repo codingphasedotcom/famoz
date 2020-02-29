@@ -60,21 +60,36 @@ class LoginController extends Controller
             }
             return $randomString;
         }
-        
-        $googleUser = Socialite::driver($provider)->user();
-        
-        $user = User::where('provider_id', $googleUser->getId())->first();
-
-        if(!$user){
-            $user = User::create([
-            'email' => $googleUser->getEmail(),
-            'full_name' => $googleUser->getName(),
-            'image_url' => $googleUser->getAvatar(),
-            'username' => generateUsername(12),
-            'provider' => "google",
-            'provider_id' => $googleUser->getId(),
-        ]);
+        $providerUser = Socialite::driver($provider)->user();
+        //google
+        if($provider == 'google'){
+            $user = User::where('provider_id', $providerUser->getId())->first();
+            if(!$user){
+                $user = User::create([
+                'email' => $providerUser->getEmail(),
+                'full_name' => $providerUser->getName(),
+                'image_url' => $providerUser->getAvatar(),
+                'username' => generateUsername(12),
+                'provider' => "google",
+                'provider_id' => $providerUser->getId(),
+            ]);
+            }
         }
+        //facebook
+        if($provider == 'facebook'){
+            $user = User::where('provider_id', $providerUser->getId())->first();
+            if(!$user){
+                $user = User::create([
+                'email' => $providerUser->getEmail(),
+                'full_name' => $providerUser->getName(),
+                'image_url' => $providerUser->getAvatar(),
+                'username' => generateUsername(12),
+                'provider' => "google",
+                'provider_id' => $providerUser->getId(),
+            ]);
+            }
+        }
+        
         Auth::login($user, true);
 
         return redirect('/');
