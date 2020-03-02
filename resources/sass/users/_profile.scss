@@ -50,6 +50,28 @@
                 color: #949799;
             }
         }
+        .follow-section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .follow-btn{
+                border: 1px solid #ec578f;
+                color: #ec578f;
+                font-weight: 700;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 40px;
+                width: 100px;
+                text-decoration: none;
+                &.active{
+                    background: #ec578f;
+                    color: white;
+                }
+            }
+        }
         .user-stats {
             max-width: 400px;
             display: flex;

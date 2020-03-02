@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Auth;
 
 class RegisterController extends Controller
 {
@@ -29,7 +30,7 @@ class RegisterController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/choose-account';
 
     /**
      * Create a new controller instance.
@@ -78,7 +79,7 @@ class RegisterController extends Controller
         $user->email = request('email');
         $user->password = Hash::make(request('password'));
         $user->save();
-        $user->account_types()->attach(request('account_type_id'));
+        // $user->account_types()->attach(request('account_type_id'));
 
        
         return $user;
@@ -89,4 +90,5 @@ class RegisterController extends Controller
         //     'password' => Hash::make($data['password']),
         // ]);
     }
+    
 }

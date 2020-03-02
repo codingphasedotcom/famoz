@@ -34,4 +34,46 @@ class UserController extends Controller
             "homeProfile" => $homeProfile
         ]);
     }
+    public function chooseAccountType()
+    {
+        return view('users/chooseAccount');
+    }
+    public function saveAccountType()
+    {
+        $user = Auth::user()->id;
+        
+        $user = User::find($user);
+
+        $user->username = request('username');
+
+        $user->save();
+        $user->account_types()->syncWithoutDetaching(request('account_type_id'));
+        return redirect('/');
+    }
+    public function follow($username)
+    {
+        $leader = User::where('username', $username)->first();
+        // $follower = Auth::user()->id;
+        
+        // $follower = User::find($user);
+
+        // $user->username = request('username');
+
+        // $user->save();
+        $leader->followers()->syncWithoutDetaching(Auth::user()->id);
+        return redirect()->back();
+    }
+    public function unfollow($username)
+    {
+        $leader = User::where('username', $username)->first();
+        // $follower = Auth::user()->id;
+        
+        // $follower = User::find($user);
+
+        // $user->username = request('username');
+
+        // $user->save();
+        $leader->followers()->detach(Auth::user()->id);
+        return redirect()->back();
+    }
 }

@@ -3,7 +3,6 @@
 @section('title', 'Page Title')
 
 @section('content')
-    
     <div id="profile-content">
         <section id="top-section">
             <div class="user-image">
@@ -14,26 +13,37 @@
                     <h3>{{'@' . $user->username}} <i class="fas fa-check-square"></i></h3>
                     {{-- <h5>{{$user->full_name}}</h5> --}}
                 </div>
+                
                 <div class="user-stats">
                     <div class="stat">
                         <div class="numbers">23</div>
                         <div class="stat-title">Posts</div>
                     </div>
                     <div class="stat">
-                        <div class="numbers">1M</div>
+                        <div class="numbers">
+                        {{$user->followersTotal()}}
+                        </div>
                         <div class="stat-title">Followers</div>
                     </div>
                     <div class="stat">
-                        <div class="numbers">32</div>
+                        <div class="numbers">{{$user->followingTotal()}}</div>
                         <div class="stat-title">Following</div>
                     </div>
                 </div>
+                
                 <div class="profile-text">
                     <p>
                         {{$user->description}}
                     </p>
                 </div>
             </div>
+            <div class="follow-section">
+                    @if($user->followers->contains(auth()->user()->id))
+                        <a href="/{{$user->username}}/unfollow" class="follow-btn active">UnFollow</a>
+                    @else
+                        <a href="/{{$user->username}}/follow" class="follow-btn ">Follow</a>
+                    @endIf
+                </div>
         </section>
         <section id="profile-tabs">
             <div class="tab-menu">

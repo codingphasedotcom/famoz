@@ -93,7 +93,7 @@
                         <i class="fas fa-tv"></i>
                         <span>{{ __('discover') }}</span>
                     </a>
-                    <a href="/post" class="upload-btn">
+                    <a href="/upload" class="upload-btn">
                         <i class="fas fa-plus-square"></i>
                         <span>{{ __('upload') }}</span>
                     </a>

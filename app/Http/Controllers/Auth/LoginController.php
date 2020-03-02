@@ -28,7 +28,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    protected $redirectTo = '/choose-account';
 
     /**
      * Create a new controller instance.
@@ -39,6 +39,7 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+    
     public function redirectToProvider($provider)
     {
         return Socialite::driver($provider)->redirect();
@@ -91,6 +92,10 @@ class LoginController extends Controller
         }
         
         Auth::login($user, true);
+        
+        if($user->account_types->contains($user->id) == false){
+            return redirect('/choose-account');
+        }
 
         return redirect('/');
         
