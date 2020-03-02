@@ -25,9 +25,15 @@ Route::get('/video/{test}', 'MediaController@showVideo');
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('login/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
+Route::get('choose-account', 'UserController@chooseAccountType')->middleware('auth');
+Route::put('choose-account', 'UserController@saveAccountType')->middleware('auth');
+
 Auth::routes();
+Route::get('/upload', 'MediaController@upload');
 Route::get('/{username}', 'UserController@profile');
 Route::get('/{username}/videos', 'UserController@videos');
+Route::get('/{username}/follow', 'UserController@follow');
+Route::get('/{username}/unfollow', 'UserController@unfollow');
 
 
 

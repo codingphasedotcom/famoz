@@ -40,4 +40,23 @@ class User extends Authenticatable
     public function account_types(){
         return $this->belongsToMany('App\AccountType');
     }
+
+    public function followers()
+    {
+        return $this->belongsToMany('App\User', 'followers', 'user_id', 'follower_id')->withTimestamps();
+    }
+
+    public function followings()
+    {
+        return $this->belongsToMany('App\User', 'followers', 'follower_id', 'user_id')->withTimestamps();
+    }
+    
+    public function followersTotal()
+    {
+        return $this->followers()->get()->count();
+    }
+    public function followingTotal()
+    {
+        return $this->followings()->get()->count();
+    }
 }

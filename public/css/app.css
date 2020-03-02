@@ -11159,6 +11159,31 @@ a.text-dark:focus {
   color: #949799;
 }
 
+#profile-content #top-section .follow-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#profile-content #top-section .follow-section .follow-btn {
+  border: 1px solid #ec578f;
+  color: #ec578f;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 40px;
+  width: 100px;
+  text-decoration: none;
+}
+
+#profile-content #top-section .follow-section .follow-btn.active {
+  background: #ec578f;
+  color: white;
+}
+
 #profile-content #top-section .user-stats {
   max-width: 400px;
   display: flex;
