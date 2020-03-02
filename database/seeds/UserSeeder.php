@@ -51,8 +51,28 @@ class UserSeeder extends Seeder
             'user_id' => 2,
         ]);
         DB::table('account_type_user')->insert([
-            'account_type_id' => 4,
+            'account_type_id' => 2,
             'user_id' => 3,
+        ]);
+        DB::table('followers')->insert([
+            'user_id' => 1,
+            'follower_id' => 2,
+        ]);
+        DB::table('followers')->insert([
+            'user_id' => 1,
+            'follower_id' => 3,
+        ]);
+        DB::table('followers')->insert([
+            'user_id' => 1,
+            'follower_id' => 3,
+        ]);
+        DB::table('followers')->insert([
+            'user_id' => 2,
+            'follower_id' => 3,
+        ]);
+        DB::table('followers')->insert([
+            'user_id' => 3,
+            'follower_id' => 1,
         ]);
     }
 }

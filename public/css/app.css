@@ -11476,9 +11476,10 @@ a.text-dark:focus {
 }
 
 #feed-content .feed-list .post .video-image {
-  background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
-  background-position: center;
-  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   border-radius: 5px;
   width: 100%;
   height: 250px;

@@ -93,12 +93,12 @@
                         <i class="fas fa-tv"></i>
                         <span>{{ __('discover') }}</span>
                     </a>
-                    <a href="/upload" class="upload-btn">
+                    <a href="/upload/video" class="upload-btn">
                         <i class="fas fa-plus-square"></i>
                         <span>{{ __('upload') }}</span>
                     </a>
                     <a href="/trending">
-                        <i class="fas fa-chart-line"></i>
+                        <i class="fas fa-fire"></i>
                         <span>{{ __('trending') }}</span>
                     </a>
                     @guest

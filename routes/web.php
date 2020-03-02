@@ -29,7 +29,8 @@ Route::get('choose-account', 'UserController@chooseAccountType')->middleware('au
 Route::put('choose-account', 'UserController@saveAccountType')->middleware('auth');
 
 Auth::routes();
-Route::get('/upload', 'MediaController@upload');
+Route::get('/upload/video', 'PostController@uploadVideo');
+Route::post('/upload/video', 'PostController@saveVideo');
 Route::get('/{username}', 'UserController@profile');
 Route::get('/{username}/videos', 'UserController@videos');
 Route::get('/{username}/follow', 'UserController@follow');

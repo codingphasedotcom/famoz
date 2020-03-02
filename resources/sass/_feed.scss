@@ -1,23 +1,23 @@
-#feed-content{
-    .home-jumbo{
+#feed-content {
+    .home-jumbo {
         display: block;
         height: calc(100vh - 200px);
         width: 100%;
-        background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+        background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
         background-position: center;
         background-size: cover;
         border-radius: 5px;
         cursor: pointer;
-        -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
--moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+        -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+        -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+        box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
         margin-bottom: 2rem;
     }
-    h2{
+    h2 {
         margin-bottom: 2rem;
     }
-    .feed-list{
-        .post{
+    .feed-list {
+        .post {
             cursor: pointer;
             display: flex;
             flex-direction: column;
@@ -27,64 +27,66 @@ box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
             border-radius: 5px;
             padding: 20px;
             margin-bottom: 1rem;
-            -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            -moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            .number{
+            -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            .number {
                 font-weight: 100;
                 margin-right: 20px;
             }
-            .video-image{
-                background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
-                background-position: center;
-                background-size: cover;
+            .video-image {
+                // background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+                // background-position: center;
+                // background-size: cover;
+                object-fit: cover;
+                object-position: center;
                 border-radius: 5px;
                 width: 100%;
                 height: 250px;
                 margin-right: 20px;
                 margin-bottom: 1rem;
             }
-            .info{
+            .info {
                 display: flex;
-                .user-image{
+                .user-image {
                     margin-right: 20px;
-                    img{
+                    img {
                         height: 50px;
                         width: 50px;
                         border-radius: 50%;
                     }
                 }
-                .title{
+                .title {
                     font-weight: 700;
                     font-size: 1.2rem;
                 }
-                .artist{
+                .artist {
                     font-weight: 500;
                     font-size: 1rem;
                 }
             }
         }
     }
-    .notifications-list{
+    .notifications-list {
         display: flex;
         // justify-content: center;
         // align-items: center;
         flex-direction: column;
-        .box-user{
+        .box-user {
             height: 150px;
             width: 100%;
-            background: url('https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg');
+            background: url("https://www.rollingstone.com/wp-content/uploads/2019/12/Ozuna-1.jpg");
             background-position: center;
             background-size: cover;
             border-radius: 5px;
             cursor: pointer;
-            -webkit-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            -moz-box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
-            box-shadow: 0px 40px 45px -35px rgba(13,102,255,0.48);
+            -webkit-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            -moz-box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
+            box-shadow: 0px 40px 45px -35px rgba(13, 102, 255, 0.48);
             margin-bottom: 2rem;
-            opacity: .5;
-            transition: opacity .3s ease-in-out;
-            &:hover{
+            opacity: 0.5;
+            transition: opacity 0.3s ease-in-out;
+            &:hover {
                 opacity: 1;
             }
         }

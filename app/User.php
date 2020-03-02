@@ -40,6 +40,10 @@ class User extends Authenticatable
     public function account_types(){
         return $this->belongsToMany('App\AccountType');
     }
+    public function posts()
+    {
+        return $this->hasMany('App\Post');
+    }
 
     public function followers()
     {

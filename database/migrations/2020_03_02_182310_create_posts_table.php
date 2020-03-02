@@ -16,11 +16,13 @@ class CreatePostsTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('title');
-            $table->bigInteger('post_type')->nullable()->index();
-            $table->bigInteger('views')->nullable();
+            $table->text('slug')->nullable()->index();
+            $table->bigInteger('post_type_id')->nullable()->index();
+            $table->bigInteger('user_id')->nullable()->index();
+            $table->bigInteger('views')->nullable()->default(0);
             $table->longText('description')->nullable();
             $table->text('image_url')->nullable();
-            $table->text('video_url')->nullable();
+            $table->text('youtube_id')->nullable();
             $table->timestamps();
         });
     }
