@@ -21,7 +21,7 @@ class CreateUsersTable extends Migration
             $table->longText('image_url')->nullable();
             $table->longText('description')->nullable();
             $table->string('provider')->nullable();
-            $table->string('provider_id')->nullable();
+            $table->text('provider_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password')->nullable();
             $table->rememberToken();
