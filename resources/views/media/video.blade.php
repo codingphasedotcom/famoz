@@ -25,12 +25,12 @@
                 <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
                     {{-- <h6>Vote</h6> --}}
                     
-                    @if ($liked == true)
-                        <a href="/video/{{$video->id}}/like" class="vote-btn">
+                    @if ($liked)
+                        <a href="/video/{{$video->id}}/dislike" class="vote-btn  active">
                             <i class="fas fa-fire-alt"></i>
                          </a>
                     @else
-                        <a href="/video/{{$video->id}}/like" class="vote-btn active">
+                        <a href="/video/{{$video->id}}/like" class="vote-btn">
                             <i class="fas fa-fire-alt"></i>
                          </a>
                     @endif
@@ -38,9 +38,12 @@
                 </div>
                 <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
                     {{-- <h6>Repost</h6> --}}
-                    <a href="/video/repost" class="repost-btn">
-                        <i class="fas fa-retweet"></i>
-                    </a>
+                    @if ($reposted)
+                        <a href="/video/{{$video->id}}/norepost" class="repost-btn active"><i class="fas fa-retweet"></i></a>
+                    @else
+                        <a href="/video/{{$video->id}}/repost" class="repost-btn"><i class="fas fa-retweet"></i></a>
+                    @endif
+                    
                 </div>
                 <div class="col-sm-12 col-md-6">
                     <h6>{{ __('crew') }}</h6>

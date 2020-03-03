@@ -20,7 +20,9 @@ Route::get('/trending', 'PageController@trending');
 Route::get('/feed', 'PageController@home')->name('home');
 Route::get('/video/{id}', 'MediaController@showVideo');
 Route::get('/video/{id}/like', 'LikeController@likePost');
-Route::get('/video/{id}/dislikePost', 'LikeController@dislikePost');
+Route::get('/video/{id}/dislike', 'LikeController@dislikePost');
+Route::get('/video/{id}/repost', 'RepostController@repost');
+Route::get('/video/{id}/norepost', 'RepostController@norepost');
 
 
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');

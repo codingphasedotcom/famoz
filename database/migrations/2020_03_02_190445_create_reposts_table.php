@@ -15,6 +15,8 @@ class CreateRepostsTable extends Migration
     {
         Schema::create('reposts', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('post_id')->unsigned()->index();
+            $table->bigInteger('user_id')->unsigned()->index();
             $table->timestamps();
         });
     }

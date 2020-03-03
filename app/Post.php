@@ -14,5 +14,9 @@ class Post extends Model
     {
         return $this->belongsToMany('App\User', 'likes', 'post_id', 'user_id')->withTimestamps();
     }
+    public function userReposted()
+    {
+        return $this->belongsToMany('App\User', 'reposts', 'post_id', 'user_id')->withTimestamps();
+    }
     
 }

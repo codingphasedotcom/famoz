@@ -15,6 +15,7 @@ class UserController extends Controller
             if (Auth::user()->username == $username){
                 $homeProfile = true;
                 $user = Auth::user();
+                // return $user->likedPosts()->get();
             } else{
                 $user = User::where('username', $username)->get()[0];
             }

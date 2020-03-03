@@ -11,18 +11,23 @@
                     @foreach ($posts as $post)
                     <div class="col-lg-12 col-xl-6">
                         <div class="post video">
-                            <a href="/video/{{$post->id}}">
-                                <img src="{{$post->image_url}}" class="video-image">
+                            <a href="/video/{{$post->post_id}}">
+                                <img src="{{$post->post_image_url}}" class="video-image">
                             </a>
                             <div class="info">
                                 <div class="user-image">
-                                    <img src="{{$post->user->image_url}}">
+                                    <a href="/{{$post->user_username}}">
+                                        <img src="{{$post->user_image_url}}">
+                                    </a>
                                 </div>
                                 <div>
                                     <div class="title">{{$post->title}}</div>
-                                    <span class="post-stats"><i class="fas fa-eye"></i> {{$post->views}} <i class="fas fa-fire-alt" aria-hidden="true"></i> 1.5k <i class="fas fa-retweet" aria-hidden="true"></i> 1.2k</span>
-                                    <div class="artist">El Cherry Scom, Kiko El Crazy, Ozuna
-                                    </div>
+                                    <span class="post-stats"><i class="fas fa-eye"></i> {{$post->views}} 
+                                    <i class="fas fa-fire-alt" aria-hidden="true"></i>{{$post->likes_total}} 
+                                    <i class="fas fa-retweet" aria-hidden="true"></i> {{$post->reposts_total}}
+                                    </span>
+                                    {{-- <div class="artist">El Cherry Scom, Kiko El Crazy, Ozuna
+                                    </div> --}}
                                 </div>
                             </div>
                         </div>

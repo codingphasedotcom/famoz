@@ -48,6 +48,10 @@ class User extends Authenticatable
     {
         return $this->belongsToMany('App\User', 'likes', 'user_id', 'post_id')->withTimestamps();
     }
+    public function repostedPosts()
+    {
+        return $this->belongsToMany('App\User', 'reposts', 'user_id', 'post_id')->withTimestamps();
+    }
     
     public function followers()
     {

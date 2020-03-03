@@ -20,6 +20,8 @@ class CreatePostsTable extends Migration
             $table->bigInteger('post_type_id')->nullable()->index();
             $table->bigInteger('user_id')->nullable()->index();
             $table->bigInteger('views')->nullable()->default(0);
+            $table->bigInteger('likes_total')->nullable()->index();
+            $table->bigInteger('reposts_total')->nullable()->index();
             $table->longText('description')->nullable();
             $table->text('image_url')->nullable();
             $table->text('youtube_id')->nullable();
