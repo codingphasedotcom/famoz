@@ -18,8 +18,9 @@ Route::get('/', 'PageController@home');
 Route::get('/discover', 'PageController@discover');
 Route::get('/trending', 'PageController@trending');
 Route::get('/feed', 'PageController@home')->name('home');
-Route::get('/video/{test}', 'MediaController@showVideo');
-
+Route::get('/video/{id}', 'MediaController@showVideo');
+Route::get('/video/{id}/like', 'LikeController@likePost');
+Route::get('/video/{id}/dislikePost', 'LikeController@dislikePost');
 
 
 Route::get('login/{provider}', 'Auth\LoginController@redirectToProvider');

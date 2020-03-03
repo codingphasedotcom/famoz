@@ -8,8 +8,8 @@
         <section id="top-section">
             <div class="row">
                 <div class="col-md-9">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NDe4b0jSHYI?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    <span class="video-title">Baje Contrenza - El Cherry Scom Ft. Ozuna, Kiko El Crazy</span>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/{{$video->youtube_id}}?rel=0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <span class="video-title">{{$video->title}}</span>
                 </div>
                 <div class="col-md-3 ad-space d-none d-md-block d-lg-block d-xl-block">
                     <img src="/img/160x600ad.jpeg">
@@ -24,9 +24,17 @@
                 </div>
                 <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
                     {{-- <h6>Vote</h6> --}}
-                    <a href="/video/like" class="vote-btn">
-                        <i class="fas fa-fire-alt"></i>
-                    </a>
+                    
+                    @if ($liked == true)
+                        <a href="/video/{{$video->id}}/like" class="vote-btn">
+                            <i class="fas fa-fire-alt"></i>
+                         </a>
+                    @else
+                        <a href="/video/{{$video->id}}/like" class="vote-btn active">
+                            <i class="fas fa-fire-alt"></i>
+                         </a>
+                    @endif
+                    
                 </div>
                 <div class="col-sm-3 col-md-2" style="display:flex;justify-content:center; align-items:center;flex-direction: column;">
                     {{-- <h6>Repost</h6> --}}

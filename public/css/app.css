@@ -11092,7 +11092,7 @@ a.text-dark:focus {
 
   #media-content #top-section iframe {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 70px);
     border-radius: 0;
     margin-bottom: 1rem;
   }

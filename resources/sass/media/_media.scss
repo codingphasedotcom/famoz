@@ -201,7 +201,7 @@
             margin-left: -10px;
             iframe {
                 width: 100%;
-                height: 100vh;
+                height: calc(100vh - 70px);
                 border-radius: 0;
                 margin-bottom: 1rem;
             }

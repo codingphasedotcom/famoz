@@ -10,4 +10,9 @@ class Post extends Model
     {
         return $this->belongsTo('App\User');
     }
+    public function userLiked()
+    {
+        return $this->belongsToMany('App\User', 'likes', 'post_id', 'user_id')->withTimestamps();
+    }
+    
 }
