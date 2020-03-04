@@ -73,6 +73,7 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
             'account_type_id' => ['required']
         ]);
+        return request('username');
         $user = new User();
         $user->username = request('username');
         $user->full_name = request('full_name');

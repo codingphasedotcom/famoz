@@ -35,7 +35,10 @@ class PageController extends Controller
                     posts.reposts_total as reposts_total, users.username as user_username, reposts.created_at"))
                 ->join('reposts', 'reposts.post_id', '=', 'posts.id')
                 ->join('users', 'users.id', '=', 'reposts.user_id')
-                ->where('reposts.user_id', '=', Auth::user()->id);
+                // ->where('reposts.user_id', '=', Auth::user()->id)
+                ->whereIn('reposts.user_id', function($query){
+                    $query->select('user_id')->from('followers')->where('follower_id', Auth::user()->id);
+                });
 
             $posts = DB::table('posts')->select(
             DB::raw("posts.id as post_id, title, user_id as creator_id, '' as reposter_id, views, posts.image_url as post_image_url, users.image_url as user_image_url,'' as likes_total, '' as reposts_total, users.username as user_username, posts.created_at"))
